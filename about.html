@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Project Helper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .about-section {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #2a2a2a;
+    }
+
+    .about-description {
+      text-align: center;
+      font-size: 18px;
+      max-width: 850px;
+      margin: 0 auto 50px;
+      color: #555;
+    }
+
+    .about-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .about-box {
+      background-color: #f9f9f9;
+      padding: 25px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .about-box p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-box {
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .about-description {
+        font-size: 16px;
+      }
+    }
+
+    .footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #131111;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #2e2626;
+}
+  </style>
+</head>
+<body>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Project Helper</h2>
+      <p class="about-description">
+        Project Helper is a learning-focused platform designed to assist students, educators, and beginner developers in navigating their development journey. Whether you're building your first website or exploring artificial intelligence, our platform offers guided tracks, project ideas, and AI support to help you succeed.
+      </p>
+
+      <div class="about-features">
+        <div class="about-box">
+          <h3>💡 Learn by Building</h3>
+          <p>Gain real-world experience by choosing project categories like Web, Mobile, Game, and AI/ML development.</p>
+        </div>
+        <div class="about-box">
+          <h3>🤖 AI-Powered Assistant</h3>
+          <p>Get instant help with code, project planning, and debugging through our integrated AI assistant.</p>
+        </div>
+        <div class="about-box">
+          <h3>🔐 Secure & Accessible</h3>
+          <p>Includes user login/signup modals, chat support, and a mobile-friendly interface for modern learners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; Project Helper — Learn by building.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

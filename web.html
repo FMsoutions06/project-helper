@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: row;
+      background: linear-gradient(to bottom right, #0f2027, #3597cf, #a5c0cc);
+      color: #fff;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #111;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tech-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tech-list li {
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tech-list li:hover {
+      background: #333;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    header input {
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+      max-width: 100%;
+      margin: 10px 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-bottom: 10px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #333;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-right: 5px;
+      font-size: 0.75rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #0b0e13;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    h3, span {
+      color: #fff;
+    }
+
+    .home-button {
+      text-decoration: none;
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.2rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .main-content {
+        padding: 20px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header input {
+        width: 100%;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Technologies</h2>
+    <ul class="tech-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Vue</li>
+      <li>Angular</li>
+      <li>Node</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Web Development</h1>
+      <input type="text" placeholder="Search" />
+      <a href="index.html" class="home-button"><samp>🏠 Home</samp></a>
+    </header>
+
+
+
+
+    <div class="project-grid">
+        <a href="https://www.youtube.com/watch?v=lie0cr3wESQ" class="project-details.html">
+            <div class="project-card">
+              <div class="meta">
+                <span>Video</span>
+                <span>19 Jul 2024</span>
+              </div>
+              <h3>Build and Deploy a Full Stack Google Drive Clone with Next.js 15</h3>
+              <div class="tags"><span>React</span> <span>Next.js</span></div>
+            </div>
+          </a>
+
+          
+          <a href="https://www.youtube.com/watch?v=vQcewScZXeI" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>8 Nov 2024</span>
+            </div>
+            <h3>Full-Stack Quick Commerce App with Next.Js Drizzle ORM and Cryptomus Payments</h3>
+            <div class="tags"><span>Next.js</span> <span>React</span></div>
+          </a>
+          
+          <a href="https://www.youtube.com/watch?v=0fYi8SGA20k&t=2218s" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>19 Jul 2024</span>
+            </div>
+            <h3>Build and Deploy an Amazing 3D Web Developer Portfolio in React.JS Three.js Tutorial</h3>
+            <div class="tags"><span>React</span> <span>Next.js</span></div>
+          </a>
+          
+          <!-- Repeat as needed -->
+          <a href="https://www.youtube.com/watch?v=iqrgggs0Qk0&t=9s" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>19 Jul 2024</span>
+            </div>
+            <h3>Build A Full Stack Ecommerce Store With Admin Dashboard</h3>
+            <div class="tags"><span>React</span> <span>Next.js</span></div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=pwsjvnADNGk" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>19 Jul 2024</span>
+            </div>
+            <h3>Build a Full Stack Uber Clone</h3>
+            <div class="tags"><span>React</span> <span>Next.js</span></div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=m_u6P5k0vP0" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span> 24 Jun 2019</span>
+            </div>
+            <h3>Social Networking App</h3>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=lauywdXKEXI" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>26 Nov 2019</span>
+            </div>
+            <h3>Job Board App with React</h3>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=0fYi8SGA20k&t=2218s" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>3 Mar 2023</span>
+            </div>
+            <h3>Build and Deploy an Amazing 3D Web Developer Portfolio in React.JS Three.js Tutorial</h3>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=Oc_ITwxiG-Y" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>25 Jun 2020</span>
+            </div>
+            <h3>Strapi and GatsbyJS Course - Portfolio Project</h3>
+          </a>
+
+           <a href="https://www.youtube.com/watch?v=ZGOaCxX8HIU" class="project-card">
+            <div class="meta">
+              <span>Video</span>
+              <span>25 Jun 2020</span>
+            </div>
+            <h3>Tetris Game in React</h3>
+          </a>
+          
+          <!-- More duplicated ecommerce cards -->
+          <!-- Tip: Use different `href` and `h3` text if linking to other project pages -->
+          
+
+      <!-- Add more cards here similarly -->
+    </div>
+  </div>
+  
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        window.location.href = 'projects.html';
+      });
+    });
+  </script>
+  
+</body>
+</html>
